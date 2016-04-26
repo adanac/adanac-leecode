@@ -4,6 +4,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import com.adanac.demo.leecode.base.array.ArrayDemo;
+
 import junit.framework.TestCase;
 
 public class ArrayDemoTest extends TestCase {
