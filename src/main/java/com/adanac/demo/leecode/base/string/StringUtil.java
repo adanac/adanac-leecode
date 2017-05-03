@@ -2,7 +2,12 @@ package com.adanac.demo.leecode.base.string;
 
 public class StringUtil {
 	// Longest Substring Without Repeating Characters
-	public static int lengthOfLongestSubstring(String s) {
+	/**
+	 * 获取字符串没有重复字符串的子串的最大长度
+	 * @param s
+	 * @return
+	 */
+	public int lengthOfLongestSubstring(String s) {
 		int n = s.length(), ans = 0;
 		int[] index = new int[128]; // current index of character
 		// try to extend the range [i, j]
@@ -14,8 +19,16 @@ public class StringUtil {
 		return ans;
 	}
 
-	public static void main(String[] args) {
-		int t = lengthOfLongestSubstring("abcefb098-13");
-		System.out.println(t);
+	public String replaceEmptyStr(String s) {
+		return s.replaceAll("\\s+", "");
+	}
+
+	public int aplusb(int a, int b) {
+		while (b != 0) {
+			int carry = a & b;
+			a = a ^ b;
+			b = carry << 1;
+		}
+		return a;
 	}
 }

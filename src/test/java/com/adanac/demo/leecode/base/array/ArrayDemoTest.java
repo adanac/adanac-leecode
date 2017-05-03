@@ -1,4 +1,4 @@
-package com.adanac.demo.leecode.array;
+package com.adanac.demo.leecode.base.array;
 
 import org.junit.After;
 import org.junit.Before;
